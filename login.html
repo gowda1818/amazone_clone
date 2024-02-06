@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Amazon FavIcon -->
+    <link
+      rel="icon"
+      href="img/amazon_favicon.ico"
+      image="image/gif"
+      size="16x16"
+    />
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!-- Font Awesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Drawer CSS File -->
+    <link rel="stylesheet" href="css/bootstrap-drawer.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Amazon : Login</title>
+  </head>
+
+  <body>
+    <!-- Login Form Card Starts -->
+    <div class="container mb-5">
+      <div class="logo mb-0 mt-5 text-center" style="width: 20%; margin: auto">
+        <img src="images/logo/amazon_logo_white.png" class="w-75" alt="" />
+      </div>
+      <div class="card mx-auto mt-5 pb-3 shadow rounded" style="width: 25rem">
+        <div class="card-body">
+          <h4 class="card-title">Login</h4>
+          <!-- Login Form Start -->
+          <form
+            class="needs-validation"
+            autocomplete="off"
+            method="post"
+            action="#"
+            novalidate
+          >
+            <div class="form-group">
+              <label for="userEmail">Email: </label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="enter your email"
+                id="userEmail"
+              />
+            </div>
+            <div class="form-group">
+              <label for="userPassword">Password: </label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="enter your password"
+                name="password"
+                id="userPassword"
+              />
+            </div>
+            <span>Remember Me</span>
+            <input
+              type="checkbox"
+              name=""
+              id="checkbox"
+              value="checked"
+              onclick="remembermefun()"
+              checked
+            />
+            <button
+              type="submit"
+              id="sign_in"
+              class="btn btn-warning w-100 shadow btn-sm rounded"
+            >
+              Sign in
+            </button>
+          </form>
+          <!-- Login Form Ends -->
+
+          <!-- OR Seperator -->
+          <hr class="hr-text" data-content="New to Amazon?" />
+
+          <!-- Create account button -->
+          <a href="register.html" class="btn btn-dark btn-sm w-100 mt-2"
+            >Create your Amazon account</a
+          >
+          <a href="#" class="btn btn-outline-success btn-sm w-100 mt-2">
+            <i class="fab fa-google"></i> Sign in with Google
+          </a>
+          <a href="#" class="btn btn-outline-primary btn-sm w-100 mt-2">
+            <i class="fab fa-facebook-square"></i> Sign in with Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drawer JS File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
